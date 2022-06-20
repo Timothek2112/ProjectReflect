@@ -11,11 +11,11 @@
         android:title="Найти фильм" />
     <item
         android:id="@+id/m3"
-        android:title="Новый кинотеатр"
+        android:title="Новый фильм"
         android:visible="true" />
     <item
         android:id="@+id/m4"
-        android:title="Новый фильм"
+        android:title="Новый кинотеатр"
         android:visible="true" />
 
 </menu>

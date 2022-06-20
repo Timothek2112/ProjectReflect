@@ -15,13 +15,12 @@
 
     <TextView
         android:id="@+id/tvText"
-        android:layout_width="350dp"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
-        android:minHeight="40dp"
-        android:textSize="20sp"
         android:maxLength="20"
-        android:text="">
-    </TextView>
+        android:minHeight="40dp"
+        android:text=""
+        android:textSize="20sp"></TextView>
 
 
 </LinearLayout>
