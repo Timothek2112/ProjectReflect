@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // TODO Auto-generated method stub
         Intent intent =null;
@@ -30,11 +31,20 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.m1: intent = new Intent(this, Theater.class);
                 break;
+
+            case R.id.m2: intent = new Intent(this, films.class);
+                break;
+            case R.id.m3: intent = new Intent(this, newTheater.class);
+                break;
+            case R.id.m4: intent = new Intent(this, newFilm.class);
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
         startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
+
 
 }

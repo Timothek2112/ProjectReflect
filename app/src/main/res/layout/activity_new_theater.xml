@@ -13,39 +13,23 @@
         android:text="" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onclick"
         android:text="Start"></Button>
-
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ProgressBar>
     <TextView
         android:id="@+id/tvInfo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""></TextView>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ProgressBar>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:lines="2000000"
-        android:text="" />
-
+        android:text="">
+    </TextView>
     <ListView
         android:id="@+id/lvMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView></LinearLayout>

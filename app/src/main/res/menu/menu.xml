@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/m1"
-        android:title="Item" />
+        android:title="Найти кинотеатр"
+        android:visible="true" />
+    <item
+        android:id="@+id/m2"
+        android:title="Найти фильм" />
+    <item
+        android:id="@+id/m3"
+        android:title="Новый кинотеатр"
+        android:visible="true" />
+    <item
+        android:id="@+id/m4"
+        android:title="Новый фильм"
+        android:visible="true" />
+
 </menu>

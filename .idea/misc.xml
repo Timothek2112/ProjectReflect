@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
-        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_theater.xml" value="0.36666666666666664" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_films.xml" value="0.23193916349809887" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_new_film.xml" value="0.1" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_new_theater.xml" value="0.22735507246376813" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/activity_theater.xml" value="0.33" />
         <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/cladapter.xml" value="0.18802083333333333" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/item.xml" value="0.8865131578947368" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/itemt.xml" value="0.22735507246376813" />
+        <entry key="..\:/test/ProjectReflect/app/src/main/res/layout/kinofilmsitem.xml" value="0.17" />
         <entry key="..\:/test/ProjectReflect/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
       </map>
     </option>
