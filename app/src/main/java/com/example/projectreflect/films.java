@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -47,9 +48,14 @@ public class films extends AppCompatActivity {
         loading = (ProgressBar) findViewById(R.id.loading);
         editText = (EditText) findViewById(R.id.editTextTextPersonName);
         th.add(new TheatersFilm("Пусто","",""));
+
+
+
+
         adapter = new ThreeStrAdapter(con,th);
 
         lvMain.setAdapter(adapter);
+
 
     }
 

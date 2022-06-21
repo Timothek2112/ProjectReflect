@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.JsonReader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
@@ -18,6 +20,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -76,8 +79,13 @@ public class Theater extends AppCompatActivity {
         adapter1 = new BoxAdapter(con,th);
 
         lvMain.setAdapter(adapter1);
+        lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                          public void onItemClick(AdapterView<?> parent, View view,
+                                                                  int position, long id) {
 
-
+                                                                    setView(position+1);
+                                          }
+                                      });
 // используем адаптер данных
 
 
@@ -87,8 +95,16 @@ public class Theater extends AppCompatActivity {
         mt = new MyTask();
         mt.execute(tvName.getText().toString());
         loading.setVisibility(View.VISIBLE);
+
+
     }
 
+
+    public void setView(int pos){
+        Intent intent = new Intent(this,MainActivity2.class);
+        intent.putExtra("position",pos);
+        startActivity(intent);
+    }
     class MyTask extends AsyncTask<String, Void, ArrayList<String[]>> {
 
 

@@ -13,27 +13,33 @@
         android:theme="@style/Theme.ProjectReflect"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".newFilm"
+            android:name=".MainActivity2"
             android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Theater" />
+        </activity>
+        <activity
+            android:name=".newFilm"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".newTheater"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".films"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".Theater"
             android:exported="false">
